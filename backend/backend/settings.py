@@ -198,10 +198,22 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # CORS settings to allow requests from localhost:3000
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000"]
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    "https://main--astonishing-cannoli-1faecf.netlify.app",
+]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    # other allowed origins
+    "https://main--astonishing-cannoli-1faecf.netlify.app",
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
 ]
 
 
