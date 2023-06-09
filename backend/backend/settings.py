@@ -218,7 +218,7 @@ CORS_ALLOW_METHODS = [
 
 
 
-# Email Configuration
+# Email Configuration#
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_HOST = 'your-smtp-server.com'  # Replace with your SMTP server hostname
 #EMAIL_PORT = 587  # Replace with the SMTP server port
