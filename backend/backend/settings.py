@@ -28,6 +28,8 @@ from datetime import timedelta
 
 # DATABASE LATER
 ##import psycopg2
+import dj_database_url
+
 
 
 from pathlib import Path
@@ -107,16 +109,13 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "jobposting",
-        "USER": str(os.getenv("DB_USER")),
-        "PASSWORD": str(os.getenv("DB_PASSWORD")),
-        "HOST": "localhost",
-        "PORT": "",
-    }
+    'default': dj_database_url.config(
+        default=f'postgres://{os.getenv("DB_USER")}:{os.getenv("DB_PASSWORD")}@localhost/jobposting'
+    )
 }
+
 
 
 # Password validation##
