@@ -197,7 +197,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-# CORS settings to allow requests from localhost:3000
+# CORS settings to allow requests from localhost:3000 and netlify
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "https://main--astonishing-cannoli-1faecf.netlify.app",
