@@ -17,8 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.decorators.csrf import csrf_exempt
-from job.views import views
-from generator.views import views as generator_views
+from job import views
+from generator import views as generator_views
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken import views as rest_framework_views
 from django.contrib.auth.views import LoginView
