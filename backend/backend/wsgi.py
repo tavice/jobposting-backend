@@ -8,11 +8,11 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 """
 
 import os
-print(os.getenv('DJANGO_SETTINGS_MODULE'))
+print('Django module is', os.getenv('DJANGO_SETTINGS_MODULE'))
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
 
 
 
