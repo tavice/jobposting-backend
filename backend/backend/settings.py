@@ -47,7 +47,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'jobposting-backend.herokuapp.com/'
+    'jobposting-backend.herokuapp.com'
 ]
 
 
