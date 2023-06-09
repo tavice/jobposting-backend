@@ -14,6 +14,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # https://dev.to/earthcomfy/django-how-to-keep-secrets-safe-with-python-dotenv-5811
 
 import os
+import dj_database_url 
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -28,7 +30,6 @@ from datetime import timedelta
 
 # DATABASE LATER
 ##import psycopg2
-import dj_database_url 
 
 
 

@@ -9,5 +9,5 @@ db.sqlite3
 /env
 *.env
 .vscode
-staticfiles
+
 ```
