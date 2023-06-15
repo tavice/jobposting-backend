@@ -72,6 +72,10 @@ class User(
 
     def __str__(self):
         return self.username
+    
+    #add a profile picture to the user
+    profile_picture = models.ImageField(upload_to='profile_pictures', blank=True, null=True)
+    
 
 
 # Employer schema: This schema would define the employer model for the app, including fields like company name, website, logo, and location. Employers can create job listings and manage their applications through this schema.

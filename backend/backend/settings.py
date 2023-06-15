@@ -114,7 +114,7 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('HEROKU_POSTGRESQL_PINK_URL'))
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
 
 

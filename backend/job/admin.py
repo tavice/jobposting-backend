@@ -8,7 +8,7 @@ class UserAdmin(admin.ModelAdmin):
     list_display = (
         'id', 'username', 'email', 'first_name', 'last_name',
         'auth_token', 'is_staff', 'is_superuser', 'is_active',
-        'date_joined', 'last_login', 'employer', 'jobseeker'
+        'date_joined', 'last_login', 'employer', 'jobseeker', 'profile_picture'
     )
 
     def employer(self, obj):
